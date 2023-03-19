@@ -125,6 +125,7 @@
     width: 80%;
     flex-wrap: wrap;
     margin-top: 2rem;
+    
   
     div {
       width: 150px;
@@ -135,6 +136,7 @@
         height: auto;
         object-fit: cover;
         filter: grayscale(1);
+        transition: filter 0.3s;
       }
   
       &:hover {
