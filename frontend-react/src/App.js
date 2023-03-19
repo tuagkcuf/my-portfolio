@@ -3,7 +3,7 @@ import React from "react";
 import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
 import { NavBar } from "./components";
 import "./App.scss"
-
+// TODO: make unselected components
 const App = () => {
     return (
         <div className="app">
