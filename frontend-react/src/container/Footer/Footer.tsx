@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion"
 
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
@@ -43,7 +44,7 @@ const Footer = () => {
     return (
         <>
             <h2 className="head-text">Take a coffee & chat with me</h2>
-
+            
             <div className="app__footer-cards">
                 <div className="app__footer-card">
                     <img src={images.email} alt="email" />
@@ -80,9 +81,19 @@ const Footer = () => {
                     <button type="button" className="p-text" onClick={handleSubmit}>{loading ? "Sending" : "Send Message"}</button>
                 </div>
             : <div>
-                {/* TODO: make a motion.div */}
-                <h3 className="head-text">Thank you for getting in touch</h3>
+                <motion.div 
+                    className="head-text"
+                    whileInView={{ opacity: [0, 1], y: [50, 0] }}
+                    transition={{ duration: 1 }}
+                >
+                    <h3 className="head-text">Thank you for getting in touch</h3>
+                </motion.div>
             </div>}
+
+            <div className="copyright">
+                <p className='p-text'>@2023 Dream</p>
+                <p className='p-text'>All rights reserved</p>
+            </div>
         </>
     );
 };

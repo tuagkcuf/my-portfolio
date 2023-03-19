@@ -44,6 +44,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    opacity: 0.7;
 
     p {
         text-transform: uppercase;
@@ -105,7 +106,7 @@
 
     padding: 1rem;
 
-    div {
+    a {
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -185,4 +186,11 @@
     .copyright {
         padding: 2rem;
     }
+}
+
+img {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
