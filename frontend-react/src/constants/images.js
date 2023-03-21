@@ -36,9 +36,13 @@ import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import next from "../assets/next.png"
 import web3 from "../assets/web3.png"
+import profile1 from "../assets/profile1.png"
+import progileph from "../assets/progileph.png"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
+    progileph,
+    profile1,
     next,
     web3,
     email,
