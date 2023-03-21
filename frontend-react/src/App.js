@@ -6,7 +6,6 @@ import "./App.scss"
 // TODO: add experience
 // TODO: make testimonials and companies
 // TODO: make custom mail
-// TODO: change photo
 const App = () => {
     return (
         <div className="app">

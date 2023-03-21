@@ -38,7 +38,7 @@ const Skills = () => {
                         className="app__skills-item app__flex"
                         key={index}
                     >
-                        <div className="app__flex" style={{ backgroundColor: skill.bgColor }}>
+                        <div className="app__flex" style={{ backgroundColor: "white" }}>
                             <img src={urlFor(skill.icon)} alt={skill.name} />
                         </div>
                         <p className="p-text">{skill.name}</p>
